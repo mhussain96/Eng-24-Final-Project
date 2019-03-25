@@ -1,0 +1,72 @@
+﻿@page
+@model Final_project_02.Views.Spartans.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Spartan[0].FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Spartan[0].LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Spartan[0].Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Spartan[0].Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Spartan[0].FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Spartan[0].Cohort)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Spartan[0].Title)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Spartan) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cohort.CohortID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title.TitleID)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.SpartanID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.SpartanID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.SpartanID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

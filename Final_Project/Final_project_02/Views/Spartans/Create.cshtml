@@ -1,0 +1,62 @@
+﻿@page
+@model Final_project_02.Views.Spartans.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Spartan</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Spartan.FirstName" class="control-label"></label>
+                <input asp-for="Spartan.FirstName" class="form-control" />
+                <span asp-validation-for="Spartan.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Spartan.LastName" class="control-label"></label>
+                <input asp-for="Spartan.LastName" class="form-control" />
+                <span asp-validation-for="Spartan.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Spartan.Email" class="control-label"></label>
+                <input asp-for="Spartan.Email" class="form-control" />
+                <span asp-validation-for="Spartan.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Spartan.Password" class="control-label"></label>
+                <input asp-for="Spartan.Password" class="form-control" />
+                <span asp-validation-for="Spartan.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Spartan.FullName" class="control-label"></label>
+                <input asp-for="Spartan.FullName" class="form-control" />
+                <span asp-validation-for="Spartan.FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Spartan.CohortID" class="control-label"></label>
+                <select asp-for="Spartan.CohortID" class ="form-control" asp-items="ViewBag.CohortID"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Spartan.TitleID" class="control-label"></label>
+                <select asp-for="Spartan.TitleID" class ="form-control" asp-items="ViewBag.TitleID"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

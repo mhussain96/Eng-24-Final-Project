@@ -6,14 +6,16 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 
-namespace Final_Project.Models
+namespace Final_Project_02.Models
 {
-    public class Role
+    public class Cohort
     {
         [Key]
-        public int RoleID { get; set; } 
-        public string RoleName { get; set; }
-        public List<User> Users { get; set; }
+        public int CohortID { get; set; }
+        public string CohortName { get; set; }
+        public int CohortNumber { get; set; }
+        public List<Spartan> Spartans { get; set; }
+
 
     }
 }

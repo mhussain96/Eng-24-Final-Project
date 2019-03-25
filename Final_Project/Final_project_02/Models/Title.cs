@@ -6,16 +6,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 
-namespace Final_Project.Models
+namespace Final_Project_02.Models
 {
-    public class Cohort
+    public class Title
     {
         [Key]
-        public int CohortID { get; set; }
-        public string CohortName { get; set; }
-        public int CohortNumber { get; set; }
+        public int TitleID { get; set; }
+        public string TitleName { get; set; }
         public List<Spartan> Spartans { get; set; }
-
 
     }
 }

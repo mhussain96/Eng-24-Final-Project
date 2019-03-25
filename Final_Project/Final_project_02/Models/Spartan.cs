@@ -6,21 +6,20 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 
-
-namespace Final_Project.Models
+namespace Final_Project_02.Models
 {
-    public class User
+    public class Spartan
     {
         [Key]
-        public int UserID {get; set; }
+        public int SpartanID { get; set; }
         [Required]
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
         [Required]
         [DataType(DataType.EmailAddress)]
-
         public string Email { get; set; }
+        [DataType(DataType.Password)]
         public string Password { get; set; }
         [Display(Name = "Full Name")]
         public string FullName
@@ -34,7 +33,7 @@ namespace Final_Project.Models
         //Foreign Keys
         public int CohortID { get; set; }
         public Cohort Cohort { get; set; }
-        public int RoleID { get; set; }
-        public Role Role { get; set; }
+        public int TitleID { get; set; }
+        public Title Title { get; set; }
     }
 }
