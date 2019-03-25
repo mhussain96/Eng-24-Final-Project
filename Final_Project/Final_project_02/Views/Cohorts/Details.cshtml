@@ -1,0 +1,31 @@
+﻿@page
+@model Final_project_02.Views.Cohorts.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cohort</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cohort.CohortName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cohort.CohortName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cohort.CohortNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cohort.CohortNumber)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Cohort.CohortID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

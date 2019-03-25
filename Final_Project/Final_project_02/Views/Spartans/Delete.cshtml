@@ -1,0 +1,64 @@
+﻿@page
+@model Final_project_02.Views.Spartans.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Spartan</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Spartan.FirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Spartan.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Spartan.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Spartan.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Spartan.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Spartan.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Spartan.Password)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Spartan.Password)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Spartan.FullName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Spartan.FullName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Spartan.Cohort)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Spartan.Cohort.CohortID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Spartan.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Spartan.Title.TitleID)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Spartan.SpartanID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>
