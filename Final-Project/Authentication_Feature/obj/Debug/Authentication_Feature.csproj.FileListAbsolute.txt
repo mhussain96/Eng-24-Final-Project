@@ -1,0 +1,2 @@
+C:\Users\Tech-W154\source\repos\Final-Project\Authentication_Feature\obj\Debug\Authentication_Feature.csprojAssemblyReference.cache
+C:\Users\Tech-W154\source\repos\Final-Project\Authentication_Feature\obj\Debug\Authentication_Feature.csproj.CoreCompileInputs.cache
