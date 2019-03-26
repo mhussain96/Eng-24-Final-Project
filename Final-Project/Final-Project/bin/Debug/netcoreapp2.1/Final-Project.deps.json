@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "eff827c6e17514e96cfd6ca30ae2072f8be63eae"
+    "signature": "23dafa9f6f5a5984db3625225b045d3f2140394c"
   },
   "compilationOptions": {
     "defines": [
@@ -27,7 +27,8 @@
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.7"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.7",
+          "SpecRun.SpecFlow": "1.8.5"
         },
         "runtime": {
           "Final-Project.dll": {}
@@ -375,6 +376,24 @@
         },
         "compile": {
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
+        }
+      },
+      "SpecFlow/2.4.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "System.ValueTuple": "4.3.0"
+        }
+      },
+      "SpecRun.Runner/1.8.5": {},
+      "SpecRun.SpecFlow/1.8.5": {
+        "dependencies": {
+          "SpecRun.SpecFlow.2-4-0": "1.8.5"
+        }
+      },
+      "SpecRun.SpecFlow.2-4-0/1.8.5": {
+        "dependencies": {
+          "SpecFlow": "2.4.0",
+          "SpecRun.Runner": "1.8.5"
         }
       },
       "System.Composition/1.0.31": {
@@ -3594,6 +3613,34 @@
       "sha512": "sha512-KuqDbPzjOWbUM6gPMbkvdhlQ10roQAoMM7mNZ8hcY/fH+9J4Zc+qT8dLWoNzGyr0OrxQVdZdbSjy/fxwoICgGg==",
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
+    },
+    "SpecFlow/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WZFFcJhh4BIsM1BDFsUbaK36rIsHdamJIdwdthJC1DwY+OgHyyojjLMpI9SwE+57SclOQ8XiGywTWsJPeZzOjw==",
+      "path": "specflow/2.4.0",
+      "hashPath": "specflow.2.4.0.nupkg.sha512"
+    },
+    "SpecRun.Runner/1.8.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jDPFB+y1n3sOHyqhhE1fykJLBtOHE5dbY1LmtAcLpgfFw0YDFHJnZsPdwn/z9/LOkgUE5q7XG9n7s0RVQAGWGQ==",
+      "path": "specrun.runner/1.8.5",
+      "hashPath": "specrun.runner.1.8.5.nupkg.sha512"
+    },
+    "SpecRun.SpecFlow/1.8.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Hk+XHxsU7UfXBGK4ygWEgCNyyOMcA5DZSKExAp2V+ts+Wcvowri93KBbfMUgt9OoH6yKzLj7tchUhWmDx6R6QQ==",
+      "path": "specrun.specflow/1.8.5",
+      "hashPath": "specrun.specflow.1.8.5.nupkg.sha512"
+    },
+    "SpecRun.SpecFlow.2-4-0/1.8.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1kKNk+a/w0nu0h3JH1xsUc4tls65YbH9B4NMzA4CL5XI5I26PoG8frOMxNBdXzh8aK6KQPwJ7RasGHZnNPIjQA==",
+      "path": "specrun.specflow.2-4-0/1.8.5",
+      "hashPath": "specrun.specflow.2-4-0.1.8.5.nupkg.sha512"
     },
     "System.Composition/1.0.31": {
       "type": "package",

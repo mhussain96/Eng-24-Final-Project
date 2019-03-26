@@ -3013,6 +3013,38 @@
           }
         }
       },
+      "SpecFlow/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3",
+          "System.ValueTuple": "4.3.0"
+        },
+        "build": {
+          "build/SpecFlow.targets": {}
+        }
+      },
+      "SpecRun.Runner/1.8.5": {
+        "type": "package",
+        "build": {
+          "build/SpecRun.Runner.props": {}
+        }
+      },
+      "SpecRun.SpecFlow/1.8.5": {
+        "type": "package",
+        "dependencies": {
+          "SpecRun.SpecFlow.2-4-0": "[1.8.5]"
+        }
+      },
+      "SpecRun.SpecFlow.2-4-0/1.8.5": {
+        "type": "package",
+        "dependencies": {
+          "SpecFlow": "[2.4.0, 2.5.0)",
+          "SpecRun.Runner": "1.8.5"
+        },
+        "build": {
+          "build/SpecRun.SpecFlow.2-4-0.targets": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -8017,6 +8049,161 @@
         "version.txt"
       ]
     },
+    "SpecFlow/2.4.0": {
+      "sha512": "WZFFcJhh4BIsM1BDFsUbaK36rIsHdamJIdwdthJC1DwY+OgHyyojjLMpI9SwE+57SclOQ8XiGywTWsJPeZzOjw==",
+      "type": "package",
+      "path": "specflow/2.4.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/SpecFlow.targets",
+        "changelog.txt",
+        "content/App.config.transform",
+        "lib/net45/TechTalk.SpecFlow.dll",
+        "specflow.2.4.0.nupkg.sha512",
+        "specflow.nuspec",
+        "tools/CommandLine.dll",
+        "tools/Gherkin.dll",
+        "tools/Licenses/BoDi-LICENSE-Apache2.txt",
+        "tools/Licenses/Gherkin-LICENSE-MIT.txt",
+        "tools/Licenses/Newtonsoft.Json-LICENSE-MIT.md",
+        "tools/Licenses/System.ValueTuple-LICENSE-MIT.txt",
+        "tools/Newtonsoft.Json.dll",
+        "tools/System.ValueTuple.dll",
+        "tools/TechTalk.SpecFlow.Generator.dll",
+        "tools/TechTalk.SpecFlow.Parser.dll",
+        "tools/TechTalk.SpecFlow.Reporting.dll",
+        "tools/TechTalk.SpecFlow.Utils.dll",
+        "tools/TechTalk.SpecFlow.dll",
+        "tools/TechTalk.SpecFlow.props",
+        "tools/TechTalk.SpecFlow.targets",
+        "tools/TechTalk.SpecFlow.tasks",
+        "tools/app.config",
+        "tools/plugincompability.config",
+        "tools/specflow.exe",
+        "tools/specflow.exe.config"
+      ]
+    },
+    "SpecRun.Runner/1.8.5": {
+      "sha512": "jDPFB+y1n3sOHyqhhE1fykJLBtOHE5dbY1LmtAcLpgfFw0YDFHJnZsPdwn/z9/LOkgUE5q7XG9n7s0RVQAGWGQ==",
+      "type": "package",
+      "path": "specrun.runner/1.8.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/SpecRun.Runner.props",
+        "docs/Sample.runsettings",
+        "docs/readme.txt",
+        "readme.txt",
+        "specrun.runner.1.8.5.nupkg.sha512",
+        "specrun.runner.nuspec",
+        "templates/CucumberJson.cshtml",
+        "templates/ReportTemplate.cshtml",
+        "templates/ReportTemplate_Features.cshtml",
+        "templates/ReportTemplate_Json.cshtml",
+        "templates/ReportTemplate_Xml.cshtml",
+        "templates/SpecRunTestProfile.xsd",
+        "templates/SpecRunTestProfile_2011_09.xsd",
+        "tools/FSharp.Core.dll",
+        "tools/Gherkin.dll",
+        "tools/Microsoft.Data.Services.Client.dll",
+        "tools/Microsoft.Web.Publishing.Tasks.dll",
+        "tools/NConsoler.dll",
+        "tools/Newtonsoft.Json.dll",
+        "tools/RazorEngine.dll",
+        "tools/RestSharp.dll",
+        "tools/SpecRun.exe",
+        "tools/SpecRun.exe.config",
+        "tools/SpecRunTestProfile.xsd",
+        "tools/SpecRunTestProfile_2011_09.xsd",
+        "tools/System.Web.Razor.dll",
+        "tools/TechTalk.SpecRun.Common.dll",
+        "tools/TechTalk.SpecRun.Framework.Executor.anycpu.clr20.exe",
+        "tools/TechTalk.SpecRun.Framework.Executor.anycpu.clr20.exe.config",
+        "tools/TechTalk.SpecRun.Framework.Executor.anycpu.clr40.exe",
+        "tools/TechTalk.SpecRun.Framework.Executor.anycpu.clr40.exe.config",
+        "tools/TechTalk.SpecRun.Framework.Executor.dll",
+        "tools/TechTalk.SpecRun.Framework.Executor.dll.config",
+        "tools/TechTalk.SpecRun.Framework.Executor.x86.clr20.exe",
+        "tools/TechTalk.SpecRun.Framework.Executor.x86.clr20.exe.config",
+        "tools/TechTalk.SpecRun.Framework.Executor.x86.clr40.exe",
+        "tools/TechTalk.SpecRun.Framework.Executor.x86.clr40.exe.config",
+        "tools/TechTalk.SpecRun.Framework.Interfaces.dll",
+        "tools/TechTalk.SpecRun.Framework.Utils.dll",
+        "tools/TechTalk.SpecRun.Framework.dll",
+        "tools/TechTalk.SpecRun.Framework.dll.config",
+        "tools/TechTalk.SpecRun.Server.CommandClient.dll",
+        "tools/TechTalk.SpecRun.Server.Commands.dll",
+        "tools/TechTalk.SpecRun.Server.ReadModelClient.dll",
+        "tools/TechTalk.SpecRun.VisualStudio.TestAdapter.dll",
+        "tools/TechTalk.SpecRun.VisualStudio.TestAdapter.dll.config",
+        "tools/TechTalk.SpecRun.dll",
+        "tools/server/Castle.Core.dll",
+        "tools/server/Castle.Windsor.dll",
+        "tools/server/EntityFramework.dll",
+        "tools/server/Microsoft.ApplicationServer.Common.dll",
+        "tools/server/Microsoft.ApplicationServer.Http.dll",
+        "tools/server/Microsoft.ApplicationServer.HttpEnhancements.dll",
+        "tools/server/Microsoft.ApplicationServer.Serialization.dll",
+        "tools/server/Microsoft.ApplicationServer.ServiceModel.dll",
+        "tools/server/Microsoft.Net.Http.dll",
+        "tools/server/Microsoft.QueryComposition.dll",
+        "tools/server/Microsoft.Runtime.Serialization.Json.dll",
+        "tools/server/Microsoft.ServiceModel.Web.jQuery.dll",
+        "tools/server/NConsoler.dll",
+        "tools/server/NLog.dll",
+        "tools/server/Ncqrs.CommandService.Contracts.dll",
+        "tools/server/Ncqrs.CommandService.dll",
+        "tools/server/Ncqrs.Config.Windsor.dll",
+        "tools/server/Ncqrs.EventBus.dll",
+        "tools/server/Ncqrs.Eventing.Sourcing.Snapshotting.DynamicSnapshot.dll",
+        "tools/server/Ncqrs.dll",
+        "tools/server/Newtonsoft.Json.dll",
+        "tools/server/SpecRun.Server.exe",
+        "tools/server/SpecRun.Server.exe.config",
+        "tools/server/TechTalk.SpecRun.Common.dll",
+        "tools/server/TechTalk.SpecRun.Server.Commands.dll",
+        "tools/server/TechTalk.SpecRun.Server.Model.dll",
+        "tools/server/TechTalk.SpecRun.Server.Model.dll.config",
+        "tools/server/TechTalk.SpecRun.Server.Service.exe",
+        "tools/server/TechTalk.SpecRun.Server.Service.exe.config"
+      ]
+    },
+    "SpecRun.SpecFlow/1.8.5": {
+      "sha512": "Hk+XHxsU7UfXBGK4ygWEgCNyyOMcA5DZSKExAp2V+ts+Wcvowri93KBbfMUgt9OoH6yKzLj7tchUhWmDx6R6QQ==",
+      "type": "package",
+      "path": "specrun.specflow/1.8.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "specrun.specflow.1.8.5.nupkg.sha512",
+        "specrun.specflow.nuspec"
+      ]
+    },
+    "SpecRun.SpecFlow.2-4-0/1.8.5": {
+      "sha512": "1kKNk+a/w0nu0h3JH1xsUc4tls65YbH9B4NMzA4CL5XI5I26PoG8frOMxNBdXzh8aK6KQPwJ7RasGHZnNPIjQA==",
+      "type": "package",
+      "path": "specrun.specflow.2-4-0/1.8.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/SpecRun.SpecFlow.2-4-0.targets",
+        "content/App.config.transform",
+        "content/Default.srprofile.pp",
+        "content/SpecRunTestProfile.xsd",
+        "content/SpecRunTestProfile_2011_09.xsd",
+        "content/runtests.cmd.pp",
+        "lib/net45/SpecRun.SpecFlowPlugin.dll",
+        "lib/net45/TechTalk.SpecRun.Common.dll",
+        "lib/net45/TechTalk.SpecRun.dll",
+        "readme.txt",
+        "specrun.specflow.2-4-0.1.8.5.nupkg.sha512",
+        "specrun.specflow.2-4-0.nuspec"
+      ]
+    },
     "System.AppContext/4.3.0": {
       "sha512": "fKC+rmaLfeIzUhagxY17Q9siv/sPrjjKcfNg1Ic8IlQkZLipo8ljcaZQu4VtI4Jqbzjc2VTjzGLF6WmsRXAEgA==",
       "type": "package",
@@ -12590,7 +12777,8 @@
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.7"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.7",
+      "specrun.specflow >= 1.8.5"
     ]
   },
   "packageFolders": {
@@ -12600,11 +12788,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\2019-02-c-sharp-labs\\Eng-24-Final-Project\\Final-Project\\Final-Project\\Final-Project.csproj",
+      "projectUniqueName": "C:\\Users\\Tech-W154\\source\\repos\\Final-Project\\Final-Project\\Final-Project.csproj",
       "projectName": "Final-Project",
-      "projectPath": "C:\\2019-02-c-sharp-labs\\Eng-24-Final-Project\\Final-Project\\Final-Project\\Final-Project.csproj",
+      "projectPath": "C:\\Users\\Tech-W154\\source\\repos\\Final-Project\\Final-Project\\Final-Project.csproj",
       "packagesPath": "C:\\Users\\Tech-W154\\.nuget\\packages\\",
-      "outputPath": "C:\\2019-02-c-sharp-labs\\Eng-24-Final-Project\\Final-Project\\Final-Project\\obj\\",
+      "outputPath": "C:\\Users\\Tech-W154\\source\\repos\\Final-Project\\Final-Project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12654,6 +12842,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.7, )"
+          },
+          "specrun.specflow": {
+            "target": "Package",
+            "version": "[1.8.5, )"
           }
         },
         "imports": [
