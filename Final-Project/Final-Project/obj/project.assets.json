@@ -12600,11 +12600,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tech-W154\\source\\repos\\Final-Project\\Final-Project\\Final-Project.csproj",
+      "projectUniqueName": "C:\\2019-02-c-sharp-labs\\Eng-24-Final-Project\\Final-Project\\Final-Project\\Final-Project.csproj",
       "projectName": "Final-Project",
-      "projectPath": "C:\\Users\\Tech-W154\\source\\repos\\Final-Project\\Final-Project\\Final-Project.csproj",
+      "projectPath": "C:\\2019-02-c-sharp-labs\\Eng-24-Final-Project\\Final-Project\\Final-Project\\Final-Project.csproj",
       "packagesPath": "C:\\Users\\Tech-W154\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tech-W154\\source\\repos\\Final-Project\\Final-Project\\obj\\",
+      "outputPath": "C:\\2019-02-c-sharp-labs\\Eng-24-Final-Project\\Final-Project\\Final-Project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
