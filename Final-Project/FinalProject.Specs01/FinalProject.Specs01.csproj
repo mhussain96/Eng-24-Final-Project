@@ -76,17 +76,36 @@
       <DependentUpon>CreateRole.feature</DependentUpon>
     </Compile>
     <Compile Include="CreateRoleSteps.cs" />
+    <Compile Include="CreateSpecialisation.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreateSpecialisation.feature</DependentUpon>
+    </Compile>
+    <Compile Include="CreateSpecialisationSteps.cs" />
     <Compile Include="DeleteRole.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DeleteRole.feature</DependentUpon>
     </Compile>
+    <Compile Include="DeleteRoleSteps.cs" />
+    <Compile Include="DeleteSpecialisation.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeleteSpecialisation.feature</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteSpecialisationSteps.cs" />
     <Compile Include="EditRole.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EditRole.feature</DependentUpon>
     </Compile>
-    <Compile Include="EditRole_FeatureSteps.cs" />
+    <Compile Include="EditRoleSteps.cs" />
+    <Compile Include="EditSpecialisation.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditSpecialisation.feature</DependentUpon>
+    </Compile>
+    <Compile Include="EditSpecialisationSteps.cs" />
     <Compile Include="ListSpecialisation.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -105,6 +124,12 @@
       <DependentUpon>RoleDetails.feature</DependentUpon>
     </Compile>
     <Compile Include="RoleDetailsSteps.cs" />
+    <Compile Include="SpecialisationDetails.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpecialisationDetails.feature</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialisationDetailsSteps.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -114,14 +139,26 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>CreateRole.feature.cs</LastGenOutput>
     </None>
+    <None Include="CreateSpecialisation.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CreateSpecialisation.feature.cs</LastGenOutput>
+    </None>
     <None Include="Default.srprofile" />
     <None Include="DeleteRole.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>DeleteRole.feature.cs</LastGenOutput>
     </None>
+    <None Include="DeleteSpecialisation.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DeleteSpecialisation.feature.cs</LastGenOutput>
+    </None>
     <None Include="EditRole.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>EditRole.feature.cs</LastGenOutput>
+    </None>
+    <None Include="EditSpecialisation.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EditSpecialisation.feature.cs</LastGenOutput>
     </None>
     <None Include="ListSpecialisation.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -137,6 +174,10 @@
       <LastGenOutput>RoleDetails.feature.cs</LastGenOutput>
     </None>
     <None Include="runtests.cmd" />
+    <None Include="SpecialisationDetails.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SpecialisationDetails.feature.cs</LastGenOutput>
+    </None>
     <None Include="SpecRunTestProfile.xsd">
       <SubType>Designer</SubType>
     </None>

@@ -6,7 +6,7 @@
 @mytag
 Scenario: Add two numbers
 	Given that I am on the "Specialisation" page 
-	And I select a "Edit" on a specialisation
-	And I change some details
-	When I press "Update"
+	And I select a Edit on a specialisation
+	And I change the details
+	When I press Update
 	Then the selected specialisation should be updated 
