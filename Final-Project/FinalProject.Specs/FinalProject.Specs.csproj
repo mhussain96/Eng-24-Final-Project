@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nunit" Version="3.10.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+    <PackageReference Include="SpecRun.SpecFlow" Version="1.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="List_Specialisation_Feature.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>List_Specialisation_Feature.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Navbar_Feature.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Navbar_Feature.feature</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="List_Specialisation_Feature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>List_Specialisation_Feature.feature.cs</LastGenOutput>
+    </None>
+    <None Update="Navbar_Feature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Navbar_Feature.feature.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
